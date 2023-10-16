@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+    Calculadora
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -13,8 +13,52 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-input [(ngModel)]="display" readonly></ion-input>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col> <ion-button (click)="borrar()"> AC </ion-button> </ion-col>
+      <ion-col> </ion-col>
+      <ion-col> </ion-col>
+      <ion-col> </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col> <ion-button (click)="agregarNumero(7)"> 7</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="agregarNumero(8)"> 8</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="agregarNumero(9)"> 9</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="realizarOperacion('*')"> X</ion-button> </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col> <ion-button (click)="agregarNumero(4)"> 4</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="agregarNumero(5)"> 5</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="agregarNumero(6)"> 6</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="realizarOperacion('-')"> - </ion-button> </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col> <ion-button (click)="agregarNumero(1)"> 1</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="agregarNumero(2)"> 2</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="agregarNumero(3)"> 3</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="realizarOperacion('+')"> +</ion-button> </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col> <ion-button (click)="agregarNumero(0)"> 0</ion-button> </ion-col>
+      <ion-col> <ion-button> .</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="realizarOperacion('/')"> ÷</ion-button> </ion-col>
+      <ion-col> <ion-button (click)="calcularResultado()"> =</ion-button> </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  
 </ion-content>
