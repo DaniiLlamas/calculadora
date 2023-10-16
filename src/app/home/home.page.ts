@@ -56,5 +56,8 @@ export class HomePage {
       this.operador = '';
       this.primerNumero = 0;
     }
+    if(this.display == "66"){
+      window.open('https://starwars.fandom.com/es/wiki/Orden_66?so=search')
+    }
   }
 }
