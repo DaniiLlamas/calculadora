@@ -16,7 +16,7 @@
   <ion-input [(ngModel)]="display" readonly></ion-input>
 
   <ion-grid>
-    <ion-row>
+    <ion-row size="6" size-md="4" size-lg="2">
       <ion-col> <ion-button (click)="borrar()"> AC </ion-button> </ion-col>
       <ion-col> </ion-col>
       <ion-col> </ion-col>
@@ -25,7 +25,7 @@
   </ion-grid>
 
   <ion-grid>
-    <ion-row>
+    <ion-row size="6" size-md="4" size-lg="2">
       <ion-col> <ion-button (click)="agregarNumero(7)"> 7</ion-button> </ion-col>
       <ion-col> <ion-button (click)="agregarNumero(8)"> 8</ion-button> </ion-col>
       <ion-col> <ion-button (click)="agregarNumero(9)"> 9</ion-button> </ion-col>
@@ -34,7 +34,7 @@
   </ion-grid>
 
   <ion-grid>
-    <ion-row>
+    <ion-row size="6" size-md="4" size-lg="2">
       <ion-col> <ion-button (click)="agregarNumero(4)"> 4</ion-button> </ion-col>
       <ion-col> <ion-button (click)="agregarNumero(5)"> 5</ion-button> </ion-col>
       <ion-col> <ion-button (click)="agregarNumero(6)"> 6</ion-button> </ion-col>
@@ -43,7 +43,7 @@
   </ion-grid>
 
   <ion-grid>
-    <ion-row>
+    <ion-row size="6" size-md="4" size-lg="2">
       <ion-col> <ion-button (click)="agregarNumero(1)"> 1</ion-button> </ion-col>
       <ion-col> <ion-button (click)="agregarNumero(2)"> 2</ion-button> </ion-col>
       <ion-col> <ion-button (click)="agregarNumero(3)"> 3</ion-button> </ion-col>
@@ -52,10 +52,10 @@
   </ion-grid>
 
   <ion-grid>
-    <ion-row>
-      <ion-col> <ion-button (click)="agregarNumero(0)"> 0</ion-button> </ion-col>
-      <ion-col> <ion-button> .</ion-button> </ion-col>
-      <ion-col> <ion-button (click)="realizarOperacion('/')"> ÷</ion-button> </ion-col>
+    <ion-row size="6" size-md="4" size-lg="2">
+      <ion-col > <ion-button (click)="agregarNumero(0)"> 0</ion-button> </ion-col>
+      <ion-col > <ion-button> .</ion-button> </ion-col>
+      <ion-col > <ion-button (click)="realizarOperacion('/')"> ÷</ion-button> </ion-col>
       <ion-col> <ion-button (click)="calcularResultado()"> =</ion-button> </ion-col>
     </ion-row>
   </ion-grid>
